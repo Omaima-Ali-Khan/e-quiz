@@ -1,0 +1,91 @@
+/* Basic page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Quiz container styling */
+.quiz-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px; /* Increased width for elongated buttons */
+}
+
+/* Question styling */
+h1 {
+  color: #333;
+}
+
+#question {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: left; /* Aligning questions to the left */
+}
+
+/* Button styling */
+.option-btn {
+  display: block;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 15px 100px; /* Increased padding for elongation */
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 100%; /* Full width */
+  font-size: 1.1em; /* Slightly larger font */
+  text-align: left; /* Aligning text inside button to the left */
+  box-sizing: border-box; /* Prevent padding from breaking width */
+}
+
+/* Hover effect for buttons */
+.option-btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* Styling for the result text */
+#result {
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+/* Score styling */
+#score {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Styling for the Next Question button */
+#next-btn {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  width: 100%;
+}
+
+#next-btn:hover {
+  background-color: #27ae60;
+}
+
+/* Center content vertically and horizontally */
+body, .quiz-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
